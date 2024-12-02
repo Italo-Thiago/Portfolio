@@ -1,14 +1,20 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { AppRoutes } from "./controllers/routes/routes";
+import { NavBarRoutes } from "./controllers/routes/NavBarRoutes";
+import { CardGridRoutes } from "./controllers/routes/CardGridRoutes"
 import { NavBar } from "./views/components/NavBar";
+import { Footer } from "./views/components/Footer";
 
 
 function App() {
     return (
+        <>
         <Router>
             <NavBar />
-            <AppRoutes />
+            <NavBarRoutes />
+            <CardGridRoutes />            
         </Router>
+        <Footer />
+        </>
     );
 }
 
