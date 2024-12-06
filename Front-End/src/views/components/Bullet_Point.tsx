@@ -1,12 +1,30 @@
-export const Bullet_Point = ({ Itens }: {Itens: string[]}) => {
-    const listItens = Itens.map((Context: string, index: number) => 
-        <li key={index} className="font-semibold">
-            {Context}
-        </li>
-    );
+type ListItem = string | { text: string; subItems: ListItem[] };
+
+export const Bullet_Point = ({ Itens }: {Itens: ListItem[] }) => {
+    const renderList = (list: ListItem[]) => {
+        return list.map((item, index) => {
+            if (typeof item === "string") {
+                return (
+                    <li key={index} className="font-semibold">
+                        {item}
+                    </li>
+                );
+            } else {
+                return (
+                    <li key={index} className="font-semibold">
+                        {item.text}
+                        <ul className="pl-4 list-disc list-inside">
+                            {renderList(item.subItems)}
+                        </ul>
+                    </li>
+                );
+            }
+        });
+    };
+
     return (
         <ul className="py-2 px-16 list-disc list-inside">
-            {listItens}
+            {renderList(Itens)}
         </ul>
     );
 }

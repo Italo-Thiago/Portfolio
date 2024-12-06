@@ -42,6 +42,37 @@ export const C_Data_Structure = () => {
                 ]} />
 
             <hr />
+            <Text Text="Algumas dessas EDs estão implementadas em linguagens como C++, Java e Python." />
+            <Text Text="Porém nosso objetivo é aprender a criar ferramentas, não apenas utilizá-las." />
+            <Bullet_Point Itens={[
+                "Nosso curso será em linguagem C",
+                "Pré-requisito: ponteiros, manipulação de memória, alocação dinâmica, TADs, Makefile, análise de complexidade."
+            ]} />
+
+            <hr/>
+            <Text Text="Na primeira parte do curso:" />
+            <Bullet_Point Itens={[
+                "Vetores dinâmicos, Listas ligadas, Filas, Pilhas e aplicações",
+            ]} />
+
+            <Text Text="Na segunda parte do curso:" />
+            <Bullet_Point Itens={[
+                { text: "Árvores", subItems: [
+                    "Árvores binárias de busca, Árvores rubro-negra",
+                    "Fila de prioridade e Heap",
+                ]},
+                "Extra: Tries e Patricia tries"
+            ]} />
+
+            <Text Text="Na terceira parte do curso:" />
+            <Bullet_Point Itens={[
+                { text: "Grafos:", subItems: [
+                    "Busca em largura e Busca em profundidade",
+                    "Ordenação topológica e Caminhos mínimos"
+                ]},
+                "Extra: Hashing e Árvores-B"
+            ]} />
+
             <Paragraph Heading="Tipos Abstratos de Dados (TAD)" SubHeading="" />
         </>
     );
