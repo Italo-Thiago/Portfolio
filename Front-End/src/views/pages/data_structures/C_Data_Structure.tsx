@@ -2,6 +2,7 @@ import { Paragraph } from "../../components/Paragraph";
 import { Title } from "../../components/Title"
 import { Text } from "../../components/Text"
 import { Bullet_Point } from "../../components/Bullet_Point";
+import { Number_Point } from "../../components/Number_Point";
 
 export const C_Data_Structure = () => {
     return (
@@ -14,8 +15,8 @@ export const C_Data_Structure = () => {
             <Text Text="O que é uma estrutura de dados?" />
             <Text Text="Uma estrutura de dados (EDs) é uma forma de armazenar e organizar os dados de modo que eles possam ser processados eficientemente:" />
             <Bullet_Point Itens={[
-                "Tempo de processamento e memória utilizada", 
-                "Eficiência tem a ver com escalabilidade: taxa de crescimento (em função do tamanho da entrada)"
+                    "Tempo de processamento e memória utilizada", 
+                    "Eficiência tem a ver com escalabilidade: taxa de crescimento (em função do tamanho da entrada)"
                 ]} />
             <Text Text="Além da organização dos dados, vamos estudar algoritmos para construção/manipulação e acesso ás EDs"/>
             
@@ -23,9 +24,22 @@ export const C_Data_Structure = () => {
             <Bullet_Point Itens={["Dicionário 200K palavras"]} />
             <Text Text="Organização dos dados" />
             <Bullet_Point Itens={[
-                "As palavras do dicionário estão organizadas em ordem lexicográfica.",
-                "Podemos realizar buscas eficientes (algoritmo de busca binária)."
-            ]} />
+                    "As palavras do dicionário estão organizadas em ordem lexicográfica.",
+                    "Podemos realizar buscas eficientes (algoritmo de busca binária)."
+                ]} />
+
+            <hr />
+            <Text Text="Vamos ver diferentes EDs e algoritmos ao longo do curso:" />
+            <Number_Point Itens={[
+                    "Listas Ligadas, Pilhas e Filas",
+                    "Árvores, Árvores Binárias de Busca, Árvores Rubro-negras",
+                    "Grafos, BFS, e DSF, ordenação topológica e caminhos mínimos",
+                    "Hashing, Tries, Árvores-B"
+                ]} />
+            <Text Text="Vamos alternar entre duas visões: a de quem usa (especificação) e a de quem constrói (implementação)." />
+            <Bullet_Point Itens={[
+                    "Vamos usar o conceito de Tipo Abstrato de Dados (TAD)",
+                ]} />
 
             <hr />
             <Paragraph Heading="Tipos Abstratos de Dados (TAD)" SubHeading="" />
