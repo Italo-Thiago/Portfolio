@@ -9,6 +9,9 @@ export const CardGrid = () => {
                     <Link to="/complexity" >
                         <Card Title="Titulo" Description="Isto e uma descrição"/>
                     </Link>
+                    <Link to="/c_data_structure">
+                        <Card Title="Estrutura de Dados em C e C#" Description="Isto e uma descrição"/>
+                    </Link>
                 </div>
             </div>
         </>

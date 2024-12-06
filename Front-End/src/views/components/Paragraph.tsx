@@ -1,4 +1,4 @@
-export const Paragraph = ({ Heading, SubHeading, Text }: {Heading: string, SubHeading: string, Text: string}) => {
+export const Paragraph = ({ Heading, SubHeading }: {Heading: string, SubHeading: string, }) => {
     return (
         <>
             <div className="w-full h-auto flex flex-row justify-start items-center gap-12 p-16  bg-white">
@@ -11,10 +11,6 @@ export const Paragraph = ({ Heading, SubHeading, Text }: {Heading: string, SubHe
                             {SubHeading}
                         </h4>
                     </div>
-
-                    <p className="h-auto flex-grow-0 opacity-80 text-base text-justify text-black">
-                        {Text}
-                    </p>
                 </div>
             </div>
         </>
