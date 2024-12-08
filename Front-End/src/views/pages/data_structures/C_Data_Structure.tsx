@@ -3,6 +3,9 @@ import { Title } from "../../components/Title"
 import { Text } from "../../components/Text"
 import { Bullet_Point } from "../../components/Bullet_Point";
 import { Number_Point } from "../../components/Number_Point";
+import { Image } from "../../components/Image";
+
+import VectorImage from "../../../assets/image/Vector.png";
 
 export const C_Data_Structure = () => {
     return (
@@ -75,7 +78,6 @@ export const C_Data_Structure = () => {
                 "Façam os trabalhos",
             ]} />
             <Text Text="O sucesso na disciplina depende bastante desse esforço inicial" />
-            <hr />
 
             <Paragraph Heading="Tipos Abstratos de Dados (TAD)" SubHeading="" />
             <Number_Point Itens={[
@@ -85,7 +87,13 @@ export const C_Data_Structure = () => {
                 "Referência",
             ]} />
 
-            <Text Text="Vetores (ou <i>arrays<i>)"/>
+            <Text Text="Vetores (ou <i>arrays</i>) são uma forma nativa em muitas linguagens de programação para estruturar dados"/>
+            <Bullet_Point Itens={[
+                "Corresponde à uuma lista indexada de itens",
+                "O número de elementos é fixo e definido quando ele é criado",
+                "Um vetor não aumenta ou diminui de tamanho",
+            ]} />
+            <Image Src={VectorImage} Alt="Vector Image" />
         </>
     );
 }
