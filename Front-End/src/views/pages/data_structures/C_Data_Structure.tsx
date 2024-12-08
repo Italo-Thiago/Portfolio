@@ -5,7 +5,7 @@ import { Bullet_Point } from "../../components/Bullet_Point";
 import { Number_Point } from "../../components/Number_Point";
 import { Image } from "../../components/Image";
 
-import VectorImage from "../../../assets/image/Vector.png";
+import VectorImage from "../../../assets/image/Vector.webp";
 
 export const C_Data_Structure = () => {
     return (
@@ -94,6 +94,7 @@ export const C_Data_Structure = () => {
                 "Um vetor não aumenta ou diminui de tamanho",
             ]} />
             <Image Src={VectorImage} Alt="Vector Image" />
+            <Text Text="Vetores são usados para implementar muitas outras estruturas de dados, como filas, pilhas e grafos, etc." />
         </>
     );
 }

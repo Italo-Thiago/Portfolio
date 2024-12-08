@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
+Front-End/.gitignore
+Front-End/index.html
+Front-End/tailwind.config.js

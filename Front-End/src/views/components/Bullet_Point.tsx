@@ -5,13 +5,13 @@ export const Bullet_Point = ({ Itens }: {Itens: ListItem[] }) => {
         return list.map((item, index) => {
             if (typeof item === "string") {
                 return (
-                    <li key={index} className="font-semibold">
+                    <li key={index} className="text-lg font-semibold">
                         {item}
                     </li>
                 );
             } else {
                 return (
-                    <li key={index} className="font-semibold">
+                    <li key={index} className="text-lg font-semibold">
                         {item.text}
                         <ul className="pl-4 list-disc list-inside">
                             {renderList(item.subItems)}

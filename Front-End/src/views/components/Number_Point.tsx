@@ -1,6 +1,6 @@
 export const Number_Point = ({ Itens }: {Itens: string[]}) => {
     const listItens = Itens.map((Context: string, index: number) => 
-        <li key={index} className="font-semibold">
+        <li key={index} className="text-lg font-semibold">
             {Context}
         </li>
     );
