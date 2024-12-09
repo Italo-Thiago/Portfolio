@@ -95,6 +95,8 @@ export const C_Data_Structure = () => {
             ]} />
             <Image Src={VectorImage} Alt="Vector Image" />
             <Text Text="Vetores são usados para implementar muitas outras estruturas de dados, como filas, pilhas e grafos, etc." />
+
+            <Text Text="Em C, um vetor pode ser alocado:" />
         </>
     );
 }
