@@ -97,6 +97,9 @@ export const C_Data_Structure = () => {
             <Text Text="Vetores são usados para implementar muitas outras estruturas de dados, como filas, pilhas e grafos, etc." />
 
             <Text Text="Em C, um vetor pode ser alocado:" />
+            <Bullet_Point Itens={[
+                "estaticamente = "
+            ]} />
         </>
     );
 }
