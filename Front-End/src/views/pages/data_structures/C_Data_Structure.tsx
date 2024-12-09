@@ -79,7 +79,7 @@ export const C_Data_Structure = () => {
             ]} />
             <Text Text="O sucesso na disciplina depende bastante desse esforço inicial" />
 
-            <Paragraph Heading="Tipos Abstratos de Dados (TAD)" SubHeading="" />
+            <Paragraph Heading="Tipos Abstratos de Dados (TAD) e Vetores dinâmicos" SubHeading="" />
             <Number_Point Itens={[
                 "Vetores",
                 "Vetores ordenados",
@@ -102,6 +102,14 @@ export const C_Data_Structure = () => {
                 "dinamicamente = <code>int *v = malloc(100*sizeof(int))</code>;"
             ]} />
             <Text Text="A usa grande vantagem é o acesso em tempo O(1), a qualquer umdos seus elementos do índice" />
+            <Text Text="<code style=>&[i] = &v[0] + i*sizeof(int)</code>" style={{textAlign: 'center', fontWeight: '600'}} />
+
+            <Text Text="Vamos definir um Tipo Abstrato de Dados (TAD) para os vetores:" />
+            <Bullet_Point Itens={[
+                "Podemos abstrair a forma como o vetor é implementado (alocação estática ou dinâmica)", 
+                "Vamos definir as operações disponíveis para o TAD",
+                "Depois, &quotapenas&quot utilizamos o TAD (cliente)",
+            ]} />
         </>
     );
 }

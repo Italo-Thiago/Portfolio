@@ -1,6 +1,6 @@
 import DOMPurify from "dompurify";
 
-export const Text = ({ Text }: {Text: string}) => {
+export const Text = ({ Text, style }: {Text: string, style?:React.CSSProperties}) => {
     const purifyHTML = DOMPurify.sanitize(Text);
 
     return (
@@ -8,6 +8,7 @@ export const Text = ({ Text }: {Text: string}) => {
             <div className="h-auto flex-grow flex flex-col justify-start items-stretch gap-6 p-0">
                 <p 
                     className="h-auto flex-grow-0 text-lg text-justify text-black font-medium"
+                    style={style}
                     dangerouslySetInnerHTML={{ __html: purifyHTML}} >
                 </p>
             </div>
