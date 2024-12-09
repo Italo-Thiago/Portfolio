@@ -98,8 +98,10 @@ export const C_Data_Structure = () => {
 
             <Text Text="Em C, um vetor pode ser alocado:" />
             <Number_Point Itens={[
-                "estaticamente = <code>int v[100]</code>",
+                "estaticamente = <code>int v[100]</code>;",
+                "dinamicamente = <code>int *v = malloc(100*sizeof(int))</code>;"
             ]} />
+            <Text Text="A usa grande vantagem é o acesso em tempo O(1), a qualquer umdos seus elementos do índice" />
         </>
     );
 }
