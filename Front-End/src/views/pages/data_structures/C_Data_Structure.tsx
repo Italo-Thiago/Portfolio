@@ -6,6 +6,8 @@ import { Number_Point } from "../../components/Number_Point";
 import { Image } from "../../components/Image";
 
 import VectorImage from "../../../assets/image/Vector.webp";
+import WhatIsTAD from "../../../assets/image/O_que_e_TAD.webp";
+import { Code } from "../../components/Code";
 
 export const C_Data_Structure = () => {
     return (
@@ -110,6 +112,40 @@ export const C_Data_Structure = () => {
                 "Vamos definir as operações disponíveis para o TAD",
                 "Depois, &quotapenas&quot utilizamos o TAD (cliente)",
             ]} />
+            <Text Text="Operações do TAD" />
+            <Bullet_Point Itens={[
+                "Criar, Adicionar, Remover, Buscar e Acessar, Destruir" 
+            ]} />
+            
+            <Text Text="Estrutura de um TAD" />
+            <Image Src={WhatIsTAD} Alt={"O que é TAD"} />
+            <Bullet_Point Itens={[
+                { text: "Interface: conjunto de operações de um TAD", subItems: [
+                    "Consiste dos <u>nomes e definições</u> usadas para executar as <u>operações</u>.",
+                ] },
+                {text: "Implementação: conjunto de algoritmos que realizam as operações", subItems: [
+                    "A implementação é o <strong>o único &quotlugar&quot</strong> que uma variável é <u>acessada diretamente</u> ",
+                ]}
+            ]} />
+
+            <Text Text="A interface funciona como um contrato entre o cliente e a implementação." />
+            <Code 
+Code="// Dados
+typedef struct {
+    int *dados;
+    int n;
+} vetor;
+
+// Funções
+vetor* criar_vetor(int tam);
+void destruir_vetor(vetor *v);
+
+void adicionar_elemento(vetor *v, int x);
+void remover_elemento(vetor *v, int i);
+int busca(vetor *v, int x);
+
+int acessar(vetor *v, int i);
+int tamanho(vetor *v)" />
         </>
     );
 }
